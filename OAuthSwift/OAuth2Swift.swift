@@ -14,10 +14,10 @@ public class OAuth2Swift: NSObject {
 
     public var authorize_url_handler: OAuthSwiftURLHandlerType = OAuthSwiftOpenURLExternally.sharedInstance
 
-    var consumer_key: String
-    var consumer_secret: String
+    public var consumer_key: String
+    public var consumer_secret: String
     var authorize_url: String
-    var access_token_url: String?
+    public var access_token_url: String?
     var response_type: String
     var observer: AnyObject?
     var content_type: String?

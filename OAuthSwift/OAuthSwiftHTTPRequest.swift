@@ -124,7 +124,7 @@ public class OAuthSwiftHTTPRequest: NSObject, NSURLConnectionDataDelegate {
                         request.setValue("application/x-www-form-urlencoded; charset=\(charset)", forHTTPHeaderField: "Content-Type")
                     }
                     else {
-                        if (encodeParameters) {
+                        if (encodeParameters && false) {
                             let queryString = nonOAuthParameters.urlEncodedQueryStringWithEncoding(dataEncoding)
                             //self.request!.URL = self.URL.URLByAppendingQueryString(queryString)
                             request.setValue("application/x-www-form-urlencoded; charset=\(charset)", forHTTPHeaderField: "Content-Type")
